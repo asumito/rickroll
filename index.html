@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You've Been Rickrolled!</title>
+    <title>You've Been...!</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden; /* Hide scrollbars if the video takes the whole screen */
-            background-color: black; /* Optional: Set a background color */
+            overflow: hidden; /* Hide scrollbars */
+            background-color: black; /* Optional background color */
         }
-        iframe {
-            width: 100vw; /* Make the iframe take the full viewport width */
-            height: 100vh; /* Make the iframe take the full viewport height */
-            border: none; /* Remove the iframe border */
+        video {
+            display: block; /* Prevent extra space below the video */
+            width: 100vw; /* Make the video take the full viewport width */
+            height: 100vh; /* Make the video take the full viewport height */
+            object-fit: cover; /* Scale the video to cover the entire container */
         }
     </style>
 </head>
 <body>
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-        frameborder="0"
-        allowfullscreen
-    ></iframe>
+    <video autoplay loop controls muted src="https://cdn.discordapp.com/attachments/1360306281465905203/1360306319822815383/Rick_Roll_Different_link__no_ads.mp4?ex=67faa37b&is=67f951fb&hm=f717850aae875a02ebae53e31aba7aa2a4f191fc08e6112935c0c1b13a26808d&"></video>
 </body>
 </html>
